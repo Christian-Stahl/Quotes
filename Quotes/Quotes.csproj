@@ -43,6 +43,7 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="ToDo.txt" />
     <None Include="packages.config" />
     <None Include="Pages\AddInPart\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{0d80350a-3116-4906-9104-e2025f30edda}</SharePointProjectItemId>
@@ -50,12 +51,16 @@
     <None Include="Pages\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{6e2802c2-eae0-44ea-8d05-e42858bf5feb}</SharePointProjectItemId>
     </None>
+    <Content Include="Elements.xml" />
     <Content Include="Pages\AddInPart.aspx" />
     <Content Include="Pages\AddInPart\Elements.xml">
       <OpcRelationship>feature-elementmanifest</OpcRelationship>
     </Content>
     <Content Include="Pages\Elements.xml" />
     <Content Include="Pages\Default.aspx" />
+    <None Include="SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{402e0440-9434-4ffb-8109-4e3317992e53}</SharePointProjectItemId>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\SharePointProjectItem.spdata">
