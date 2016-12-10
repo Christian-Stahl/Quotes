@@ -9,7 +9,6 @@
     <link rel="Stylesheet" type="text/css" href="../Content/App.css" />
 </asp:Content>
 <asp:Content ContentPlaceHolderID="PlaceHolderPageTitleInTitleArea" runat="server">Quotes</asp:Content>
-
 <asp:Content ContentPlaceHolderID="PlaceHolderMain" runat="server">
  
     <div class="quoteWrap">
