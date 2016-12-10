@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="383656b1-7dc8-47ae-a921-1fa1df5c41b4" 
+        solutionId="383656b1-7dc8-47ae-a921-1fa1df5c41b4" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="Quotes"
+        sharePointProductVersion="16.0">
+  <features>
+        <featureReference itemId="b92d4e3e-b7c3-4d48-9205-1473a53fe7cf" />
+  </features>
+</package>

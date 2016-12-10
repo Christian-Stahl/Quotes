@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ClientWebPart Name="AddInPart" Title="Quotes" Description="Quotes" DefaultWidth="300" DefaultHeight="200">
+
+    <Content Type="html" Src="~appWebUrl/Pages/AddInPart.aspx?{StandardTokens}" />
+    <Properties>
+    </Properties>
+
+  </ClientWebPart>
+</Elements>

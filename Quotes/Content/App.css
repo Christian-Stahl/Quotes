@@ -1,0 +1,19 @@
+﻿
+
+
+.quoteWrap{
+    width:400px; 
+    background:border-box #f2b5e2; 
+    padding:20px; 
+    border:1px solid purple; 
+    border-radius:5px
+}
+.quote{
+    font-size:30px
+}
+.author{
+    font-size:18px;
+    font-style:italic; 
+    margin-left:20px; 
+    padding-top:20px
+}
