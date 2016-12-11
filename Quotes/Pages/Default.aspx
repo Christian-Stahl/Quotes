@@ -20,5 +20,6 @@
 
     <!-- use for quotesAllItems -->
     <div class="listResult"></div>
+    <div class="rand"></div>
 
 </asp:Content>

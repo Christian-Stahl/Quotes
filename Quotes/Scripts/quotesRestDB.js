@@ -14,7 +14,10 @@ jQuery.noConflict();
     (function ($) {
 
         'use strict';
-        var apikey = 'AddYourKeyHere';
+
+
+        var random = '0';
+        var apikey = '';
  
             // execute the AJAX request
             $.ajax({
@@ -36,13 +39,34 @@ jQuery.noConflict();
         // success function
         function successFunction(data) {
             if (data.length > 0) {
-                for (var i = 0; i < data.length; i++) {
-                    var randNum = Math.floor(Math.random() * data.length);
-  
-                        $('.quote').text(data[randNum].quote);
-                        $('.author').text(data[randNum].author);
 
-                }
+
+                var randomSetting = "";
+                    if (random == '1') {
+                        // randomSetting = '1';
+                        for (var i = 0; i < data.length; i++) {
+                            var randNum = Math.floor(Math.random() * data.length);
+                                $('.quote').text(data[randNum].quote);
+                                $('.author').text(data[randNum].author);
+                                $('.rand').text(randomSetting);
+                        }
+                    }
+
+                    else {
+                        // randomSetting = '0';
+                        for (var i = 0; i < data.length; i++) {
+                            $('.quote').text(data[i].quote);
+                            $('.author').text(data[i].author);
+                            $('.rand').text(randomSetting);
+                        }
+                    }
+
+
+
+
+
+
+
             }
         }
    
