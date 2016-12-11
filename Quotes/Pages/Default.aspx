@@ -5,7 +5,8 @@
 <asp:Content ContentPlaceHolderID="PlaceHolderAdditionalPageHead" runat="server">
     <script type="text/javascript" src="../Scripts/jquery-1.9.1.min.js"></script>
     <meta name="WebPartPageExpansion" content="full" />
-    <script type="text/javascript" src="../Scripts/quotes.js"></script>
+    <%--  <script type="text/javascript" src="../Scripts/quotes.js"></script> --%>
+    <script type="text/javascript" src="../Scripts/quotesRestDB.js"></script>
     <link rel="Stylesheet" type="text/css" href="../Content/App.css" />
 </asp:Content>
 <asp:Content ContentPlaceHolderID="PlaceHolderPageTitleInTitleArea" runat="server">Quotes</asp:Content>

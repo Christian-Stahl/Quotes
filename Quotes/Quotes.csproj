@@ -43,6 +43,7 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="Scripts\quotesRestDB.js" />
     <Content Include="ToDo.txt" />
     <None Include="packages.config" />
     <None Include="Pages\AddInPart\SharePointProjectItem.spdata">
