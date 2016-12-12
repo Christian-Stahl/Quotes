@@ -1,6 +1,0 @@
-﻿
-
-
-
-1. Skapa ett API på Amazon S3 med egna citat och koppla på den istället
-2. Fixa en design

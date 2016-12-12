@@ -58,7 +58,6 @@
     </Content>
     <Content Include="Scripts\quoteInternalList.js" />
     <Content Include="Scripts\quotesRestDB.js" />
-    <Content Include="ToDo.txt" />
     <None Include="Core\Columns\QuoteText\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{c1c048af-47e1-4d39-aa26-55836fda7df7}</SharePointProjectItemId>
     </None>
