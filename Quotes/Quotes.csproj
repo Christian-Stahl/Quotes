@@ -43,8 +43,40 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="Core\Columns\QuoteAuthor\Elements.xml" />
+    <Content Include="Core\Columns\QuoteText\Elements.xml" />
+    <Content Include="Core\ContentTypes\Quote\Elements.xml" />
+    <Content Include="Core\Elements.xml" />
+    <Content Include="Features\Feature2\Feature2.Template.xml">
+      <DependentUpon>Feature2.feature</DependentUpon>
+    </Content>
+    <Content Include="Core\Lists\Quotes\Elements.xml" />
+    <Content Include="Core\Lists\Quotes\QuotesInstance\Elements.xml" />
+    <Content Include="Core\Lists\Quotes\Schema.xml" />
+    <Content Include="Features\Feature3\Feature3.Template.xml">
+      <DependentUpon>Feature3.feature</DependentUpon>
+    </Content>
+    <Content Include="Scripts\quoteInternalList.js" />
     <Content Include="Scripts\quotesRestDB.js" />
     <Content Include="ToDo.txt" />
+    <None Include="Core\Columns\QuoteText\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c1c048af-47e1-4d39-aa26-55836fda7df7}</SharePointProjectItemId>
+    </None>
+    <None Include="Core\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{64ce9d5d-358a-4a25-94e1-ab9ed81fb3d8}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Feature2\Feature2.feature">
+      <FeatureId>{cf87cc04-46b2-43fa-8d3b-302e67a7091c}</FeatureId>
+    </None>
+    <None Include="Core\Lists\Quotes\QuotesInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b0bd75a0-8000-483f-be2b-ccb8bbed754d}</SharePointProjectItemId>
+    </None>
+    <None Include="Core\Lists\Quotes\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8a3b8748-37f3-4c1d-a066-139e5f3d6cff}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Feature3\Feature3.feature">
+      <FeatureId>{6a20bcdc-ae8f-4d15-b808-8f0e47e3624e}</FeatureId>
+    </None>
     <None Include="packages.config" />
     <None Include="Pages\AddInPart\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{0d80350a-3116-4906-9104-e2025f30edda}</SharePointProjectItemId>
@@ -59,6 +91,12 @@
     </Content>
     <Content Include="Pages\Elements.xml" />
     <Content Include="Pages\Default.aspx" />
+    <None Include="Core\Columns\QuoteAuthor\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e5d54be6-0fa3-459d-86cd-1faf9fe03ec9}</SharePointProjectItemId>
+    </None>
+    <None Include="Core\ContentTypes\Quote\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{39a6914a-fbc8-4134-a98e-93a105be0bd8}</SharePointProjectItemId>
+    </None>
     <None Include="SharePointProjectItem.spdata">
       <SharePointProjectItemId>{402e0440-9434-4ffb-8109-4e3317992e53}</SharePointProjectItemId>
     </None>
@@ -68,8 +106,8 @@
       <SharePointProjectItemId>{525bb37d-513b-4e40-8254-fd8eae125543}</SharePointProjectItemId>
     </None>
     <Content Include="Scripts\Elements.xml" />
-    <Content Include="Scripts\quotesAllItems.js" />
-    <Content Include="Scripts\quotes.js" />
+    <Content Include="Scripts\quotesappfreeAllItems.js" />
+    <Content Include="Scripts\quotesappfreeOneItem.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
   </ItemGroup>
   <ItemGroup>
@@ -107,6 +145,7 @@
       <SubType>Designer</SubType>
     </AppManifestFile>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

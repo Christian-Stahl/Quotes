@@ -16,8 +16,8 @@ jQuery.noConflict();
         'use strict';
 
 
-        var random = '0';
-        var apikey = '';
+        var random = '1';
+        var apikey = '584d67ccd386005e6393744a';
  
             // execute the AJAX request
             $.ajax({
@@ -41,9 +41,10 @@ jQuery.noConflict();
             if (data.length > 0) {
 
 
+                // onödig funktion tror jag..
                 var randomSetting = "";
                     if (random == '1') {
-                        // randomSetting = '1';
+                        // random is on;
                         for (var i = 0; i < data.length; i++) {
                             var randNum = Math.floor(Math.random() * data.length);
                                 $('.quote').text(data[randNum].quote);
@@ -60,11 +61,6 @@ jQuery.noConflict();
                             $('.rand').text(randomSetting);
                         }
                     }
-
-
-
-
-
 
 
             }

@@ -20,8 +20,7 @@ jQuery.noConflict();
 
             // execute the AJAX request
             $.ajax({
-                // url: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/Demo.json',
-                url: 'https://quotesappfree.herokuapp.com/quotes.json',
+                  url: 'https://quotesappfree.herokuapp.com/quotes.json',
                 
                 dataType: 'json',
                 beforeSend: function () {

@@ -10,8 +10,7 @@
     <title></title>
 
     <script type="text/javascript" src="../Scripts/jquery-1.9.1.min.js"></script>
-    <script src="../Scripts/quotes.js"></script>
-
+    <script type="text/javascript" src="../Scripts/quotesRestDB.js"></script>
 
     <script type="text/javascript">
         // Set the style of the client web part page to be consistent with the host web.

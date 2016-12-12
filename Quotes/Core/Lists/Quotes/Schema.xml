@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Quotes" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Quotes" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x0100c7974c3d6c7f470b9823b52a8d1961cc" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{c536a8b4-073e-4143-ae8e-1caf6f7f644c}" Name="QuoteAuthor" /><FieldRef ID="{b0022cb2-e9a3-435d-9f17-68814559b771}" Name="QuoteText" /></FieldRefs></ContentType><ContentType ID="0x0100BCAFA1522AE54A0F95C57FA26C59A5BD" Name="Quote" Group="Custom Content Types" Description="Quote" Inherits="TRUE" Version="0"><FieldRefs><FieldRef ID="{c536a8b4-073e-4143-ae8e-1caf6f7f644c}" DisplayName="Quote Author" Required="TRUE" Name="QuoteAuthor" /><FieldRef ID="{b0022cb2-e9a3-435d-9f17-68814559b771}" DisplayName="Quote Text" Required="TRUE" Name="QuoteText" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    <Field ID="{c536a8b4-073e-4143-ae8e-1caf6f7f644c}" Name="QuoteAuthor" DisplayName="Quote Author" Type="Text" Required="TRUE" Group="Custom Site Columns"></Field><Field ID="{b0022cb2-e9a3-435d-9f17-68814559b771}" Name="QuoteText" DisplayName="Quote Text" Type="Note" RichText="FALSE" Required="TRUE" Group="Custom Site Columns"></Field></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="QuoteAuthor" /><FieldRef Name="QuoteText" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

@@ -1,11 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package dslVersion="1.0.0.0" 
-        Id="383656b1-7dc8-47ae-a921-1fa1df5c41b4" 
-        solutionId="383656b1-7dc8-47ae-a921-1fa1df5c41b4" 
-        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
-        name="Quotes"
-        sharePointProductVersion="16.0">
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="383656b1-7dc8-47ae-a921-1fa1df5c41b4" solutionId="383656b1-7dc8-47ae-a921-1fa1df5c41b4" resetWebServer="false" sharePointProductVersion="16.0" name="Quotes" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
   <features>
-        <featureReference itemId="b92d4e3e-b7c3-4d48-9205-1473a53fe7cf" />
+    <featureReference itemId="b92d4e3e-b7c3-4d48-9205-1473a53fe7cf" />
+    <featureReference itemId="cf87cc04-46b2-43fa-8d3b-302e67a7091c" />
+    <featureReference itemId="6a20bcdc-ae8f-4d15-b808-8f0e47e3624e" />
   </features>
 </package>

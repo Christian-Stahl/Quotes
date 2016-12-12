@@ -14,18 +14,14 @@ function getQueryStringParameter(urlParameterKey) {
 jQuery.noConflict();
     (function ($) {
 
-        // $(document).ready(function() {
-
         'use strict';
 
             // execute the AJAX request
             $.ajax({
-                // url: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/Demo.json',
-                url: 'https://quotesappfree.herokuapp.com/quotes.json',
+                // url: 'xxx',
                 
                 dataType: 'json',
                 beforeSend: function () {
-                    // $loader.show();
                 }
             })
             .done(successFunction)
@@ -40,9 +36,7 @@ jQuery.noConflict();
                 for (var i = 0; i < data.length; i++) {
                     var randNum = Math.floor(Math.random() * data.length);
   
-                        // $('.id').text(data[randNum].id);
-                        $('.quote').text(data[randNum].quote);
-                        $('.author').text(data[randNum].author);
+                        // $('.quote').text(data[randNum].quote);
 
                 }
             }
@@ -50,14 +44,11 @@ jQuery.noConflict();
    
         // fail function
         function failFunction(request, textStatus, errorThrown) {
-            // hide the list and show the corresponding message
-            $list.hide();
             $message.text('An error occurred during your request: ' + request.status + ' ' + textStatus + ' ' + errorThrown);
         }
 
         // always function
         function alwaysFunction() {
-        // try this later
         }
 
 
