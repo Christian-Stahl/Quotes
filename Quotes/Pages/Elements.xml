@@ -3,5 +3,6 @@
   <Module Name="Pages">
     <File Path="Pages\Default.aspx" Url="Pages/Default.aspx" ReplaceContent="TRUE" />
     <File Path="Pages\AddInPart.aspx" Url="Pages/AddInPart.aspx" ReplaceContent="TRUE" />
+    <File Path="Pages\GetInternalList.aspx" Url="Pages/GetInternalList.aspx" ReplaceContent="TRUE" />
   </Module>
 </Elements>

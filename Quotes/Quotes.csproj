@@ -56,6 +56,8 @@
     <Content Include="Features\Feature3\Feature3.Template.xml">
       <DependentUpon>Feature3.feature</DependentUpon>
     </Content>
+    <Content Include="Pages\GetInternalList.aspx" />
+    <Content Include="Scripts\jquery-3.1.1.min.js" />
     <Content Include="Scripts\quoteInternalList.js" />
     <Content Include="Scripts\quotesRestDB.js" />
     <None Include="Core\Columns\QuoteText\SharePointProjectItem.spdata">
@@ -107,7 +109,6 @@
     <Content Include="Scripts\Elements.xml" />
     <Content Include="Scripts\quotesappfreeAllItems.js" />
     <Content Include="Scripts\quotesappfreeOneItem.js" />
-    <Content Include="Scripts\jquery-1.9.1.min.js" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\SharePointProjectItem.spdata">

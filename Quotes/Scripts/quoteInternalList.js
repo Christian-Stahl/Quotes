@@ -10,46 +10,47 @@ function getQueryStringParameter(urlParameterKey) {
     }
 }
 
+// store app web URL
+// in the aspx page, load this files to be able to get _spPageContextInfo
+// sp.runtime.js 
+// sp.js
+// var appWebUrl = 'https://ecusolna-95dc25dd6da6a6.sharepoint.com/sites/christiandevsite/Quotes/'
 
-jQuery.noConflict();
-    (function ($) {
 
-        'use strict';
+$(document).ready(function () {
+    var appWebUrl = window.location.protocol + "//" + window.location.host + _spPageContextInfo.webServerRelativeUrl;
 
-            // execute the AJAX request
-            $.ajax({
-                // url: 'xxx',
-                
-                dataType: 'json',
-                beforeSend: function () {
-                }
-            })
-            .done(successFunction)
-            .fail(failFunction)
-            .always(alwaysFunction);
+    var request = $.ajax({
+        url: appWebUrl + "/_api/web/lists/getbytitle('Quotes')/items?$select=QuoteText,QuoteAuthor",
+            type: "GET",
+            headers: { "Accept": "application/json;odata=verbose" },
+            cache: false,
+        })
+
+
+    request.done(function (data) {
+
+        var numberOfItems = data.d.results.length;
+        var randItem = Math.floor(Math.random() * numberOfItems);
  
+            var randText = data.d.results[randItem].QuoteText;
+            var randAuthor = data.d.results[randItem].QuoteAuthor;
 
-        // success function
-        function successFunction(data) {
-            // if data exists
-            if (data.length > 0) {
-                for (var i = 0; i < data.length; i++) {
-                    var randNum = Math.floor(Math.random() * data.length);
-  
-                        // $('.quote').text(data[randNum].quote);
+                $('.quoteText').html(randText);
+                $('.quoteAuthor').html(randAuthor);
 
-                }
-            }
-        }
-   
-        // fail function
-        function failFunction(request, textStatus, errorThrown) {
-            $message.text('An error occurred during your request: ' + request.status + ' ' + textStatus + ' ' + errorThrown);
-        }
-
-        // always function
-        function alwaysFunction() {
-        }
+    });
 
 
-    })(jQuery);
+
+
+    request.fail(function (jqXHR, textStatus) {
+        console.log('syntax error!' + textStatus);
+    });
+
+
+});
+
+
+
+

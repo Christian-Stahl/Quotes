@@ -17,7 +17,7 @@ jQuery.noConflict();
 
 
         var random = '1';
-        var apikey = '584d67ccd386005e6393744a';
+        var apikey = '';
  
             // execute the AJAX request
             $.ajax({
