@@ -9,8 +9,11 @@
 <head>
     <title></title>
 
-    <script type="text/javascript" src="../Scripts/jquery-1.9.1.min.js"></script>
+  
+    <script type="text/javascript" src="../Scripts/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery-migrate-1.4.1.min.js"></script>
     <script type="text/javascript" src="../Scripts/quotesRestDB.js"></script>
+     <link rel="Stylesheet" type="text/css" href="../Content/App.css" />
 
     <script type="text/javascript">
         // Set the style of the client web part page to be consistent with the host web.
@@ -39,5 +42,12 @@
     </script>
 </head>
 <body>
+
+    <div class="quoteWrap">
+        <div class="id"></div>
+        <div class="quote"></div>
+        <div class="author"></div>
+    </div>
+
 </body>
 </html>

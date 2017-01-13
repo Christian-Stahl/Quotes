@@ -68,6 +68,7 @@ jQuery.noConflict();
    
         // fail function
         function failFunction(request, textStatus, errorThrown) {
+            $('.quote').html("Please make sure to add a valid API key, its free.." + "<a href='https://restdb.io/signup/' target='_blank'>" + "https://restdb.io/signup/" + "</a>");
         }
 
         // always function

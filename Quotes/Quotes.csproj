@@ -58,6 +58,7 @@
     </Content>
     <Content Include="Pages\GetInternalList.aspx" />
     <Content Include="Scripts\jquery-3.1.1.min.js" />
+    <Content Include="Scripts\jquery-migrate-1.4.1.min.js" />
     <Content Include="Scripts\quoteInternalList.js" />
     <Content Include="Scripts\quotesRestDB.js" />
     <None Include="Core\Columns\QuoteText\SharePointProjectItem.spdata">

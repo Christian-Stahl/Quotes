@@ -6,5 +6,6 @@
     <File Path="Scripts\quotesRestDB.js" Url="Scripts/quotesRestDB.js" ReplaceContent="TRUE" />
     <File Path="Scripts\quoteInternalList.js" Url="Scripts/quoteInternalList.js" ReplaceContent="TRUE" />
     <File Path="Scripts\jquery-3.1.1.min.js" Url="Scripts/jquery-3.1.1.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-migrate-1.4.1.min.js" Url="Scripts/jquery-migrate-1.4.1.min.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>

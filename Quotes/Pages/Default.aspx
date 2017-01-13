@@ -23,6 +23,7 @@
     </div>
 
 
+    <p>Notera: Denna sida är Default.aspx</p>
 
     <p><a href="/sites/ChristianDevSite/Quotes/Lists/Quotes/Allitems.aspx">Till listan</a></p>    
 
