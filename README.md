@@ -1,1 +1,1 @@
-# Demo project, feel free to use & try out
+# This is an open source project for a SharePoint Hosted Add-In, feel free to use it as you like. You can see this as a template for your SharePoint Add-In containing a typical solution to communicate with the add-in web as well as the host web,
