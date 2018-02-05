@@ -1,4 +1,4 @@
-﻿'use strict';
+'use strict';
 
 function getQueryStringParameter(urlParameterKey) {
     var params = document.URL.split('?')[1].split('&');
@@ -10,12 +10,8 @@ function getQueryStringParameter(urlParameterKey) {
     }
 }
 
-// store app web URL
-// in the aspx page, load this files to be able to get _spPageContextInfo
-// sp.runtime.js 
-// sp.js
-// var appWebUrl = 'https://ecusolna-95dc25dd6da6a6.sharepoint.com/sites/christiandevsite/Quotes/'
-
+// in the aspx pages (not app part), you have to load sp.runtime.js and sp.js to be able to get _spPageContextInfo
+// exemple of a appWebUrl would be like: 'https://ecusolna-e1009421cbba3f.sharepoint.com/sites/christiandevsite/Quotes/'
 
 $(document).ready(function () {
     var appWebUrl = window.location.protocol + "//" + window.location.host + _spPageContextInfo.webServerRelativeUrl;
@@ -26,7 +22,6 @@ $(document).ready(function () {
             headers: { "Accept": "application/json;odata=verbose" },
             cache: false,
         })
-
 
     request.done(function (data) {
 
@@ -40,17 +35,9 @@ $(document).ready(function () {
                 $('.quoteAuthor').html(randAuthor);
 
     });
-
-
-
-
+    
     request.fail(function (jqXHR, textStatus) {
-        console.log('syntax error!' + textStatus);
+        console.log('Error!' + textStatus);
     });
 
-
 });
-
-
-
-
