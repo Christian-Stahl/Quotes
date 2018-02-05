@@ -1,4 +1,4 @@
-﻿'use strict';
+'use strict';
 
 function getQueryStringParameter(urlParameterKey) {
     var params = document.URL.split('?')[1].split('&');
@@ -17,6 +17,7 @@ jQuery.noConflict();
 
 
         var random = '1';
+        // Add your key here..
         var apikey = '';
  
             // execute the AJAX request
